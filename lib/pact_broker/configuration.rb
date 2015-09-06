@@ -31,8 +31,8 @@ module PactBroker
 
     def self.default_html_pact_render
       lambda { |pact|
-        require 'pact_broker/api/renderers/html_pact_renderer'
-        PactBroker::Api::Renderers::HtmlPactRenderer.call pact
+        require 'pact_broker/my/html_pact_renderer'
+        PactBroker::My::HtmlPactRenderer.call pact
       }
     end
 
